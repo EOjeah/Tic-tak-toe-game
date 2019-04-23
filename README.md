@@ -1,2 +1,3 @@
 # udemy python bootcamp
-Tick Tak Toe game in Python
+Milestone project 1
+  Tic tak toe game in Python
