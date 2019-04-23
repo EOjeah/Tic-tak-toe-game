@@ -7,6 +7,5 @@ def print_layout():
     | X | O | O |
 
     """)
-    pass
 
 print_layout()
