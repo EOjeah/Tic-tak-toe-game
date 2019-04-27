@@ -8,4 +8,4 @@ def print_layout():
 
     """)
 
-print_layout()
+
