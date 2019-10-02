@@ -55,34 +55,13 @@ if __name__ == "__main__":
 
     game_over = False
 
-    # print(game_status)
-
-    # pl.print_layout()
-
-    # while not game_over:
-    #     print()
-    #     if game_status[0] is game_status[1] is game_status[2]:
-    #         game_over = True
-
-    # while True:
-    #     try:
-    #         play_position = int(input('Enter position: '))
-    #         if play_position not in range(9):
-    #             raise ValueError
-    #         if game_status[play_position] is not None:
-    #             raise PostionTakenError
-    #         break
-    #     except PostionTakenError:
-    #         print("Oops!  That postion is taken.  Try again...")
-    #     except Exception:
-    #         print("Oops!  That was no valid postion.  Try again...")
+    
     count = 0
     player_turn = alternate()
     while True:
         current_play = player_turn.__next__()
         print('{} turn, play'.format(current_play))
         #player one turn
-        # print(game_status)
         game_positions = tuple(game_status.values())
         # print(game_positions)
         print('''
@@ -138,12 +117,9 @@ if __name__ == "__main__":
         #populate game_status 
         game_status[play_position] = players[current_play]
 
-        #players = StrictDict({'player1':None,'player2': None})
-        #current player = player1,
-        #play_position = 4 and valid 
         print(game_status)
 
-        # next_player = players[alternate.__next__()]
+       
     
 
     #play_position is btw 0 and 8 that the user entered last
